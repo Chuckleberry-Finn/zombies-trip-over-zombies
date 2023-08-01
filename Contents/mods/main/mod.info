@@ -1,6 +1,6 @@
-id=ChuckTemplate
-name=ChuckTemplate
-description= 
+id=Zombies-Trip-Over-Zombies
+name=Zombies Trip Over Zombies
+description=Zombies trip over zombies on the floor (and other items).
 poster=poster.png
 tags=Build 41
 versionMin=41.0

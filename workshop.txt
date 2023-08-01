@@ -1,7 +1,6 @@
 version=1
-title=Chuck-Template
-description=[h2]Brief 1 sentence description.[/h2]
-description=[h3]Commissioned by [b]client name[/b][/h3]
+title=Zombies Trip Over Zombies
+description=[h2]Zombies trip over zombies on the floor (and other items).[/h2]
 description=
 description=
 description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi.png[/img][/url]
