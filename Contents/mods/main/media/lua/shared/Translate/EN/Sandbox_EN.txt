@@ -1,0 +1,12 @@
+Sandbox_EN = {
+    Sandbox_ZombiesTripOverZombies = "Zombies Trip Over Zombies",
+
+    Sandbox_ZombiesTripOverZombies_zombieTripChance = "Zombie Trip Chance",
+    Sandbox_ZombiesTripOverZombies_sprintersOnly = "Sprinters Only",
+
+    Sandbox_ZombiesTripOverZombies_playersToo = "Players Trip Too",
+	Sandbox_ZombiesTripOverZombies_playersToo_option1 = "No",
+	Sandbox_ZombiesTripOverZombies_playersToo_option2 = "Going Backwards Only",
+	Sandbox_ZombiesTripOverZombies_playersToo_option3 = "Sprinting Only",
+	Sandbox_ZombiesTripOverZombies_playersToo_option4 = "Both Going Backwards and Sprinting",
+}
