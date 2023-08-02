@@ -1,6 +1,6 @@
 id=Zombies-Trip-Over-Zombies
 name=Zombies Trip Over Zombies
-description=Zombies trip over zombies on the floor (and other items).
+description=Zombies trip over zombies/bodies on the floor.
 poster=poster.png
 tags=Build 41
 versionMin=41.0

@@ -1,6 +1,7 @@
 version=1
+id=3013923320
 title=Zombies Trip Over Zombies
-description=[h2]Zombies trip over zombies on the floor (and other items).[/h2]
+description=[h2]Zombies trip over zombies/bodies on the floor.[/h2]
 description=
 description=
 description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi.png[/img][/url]
@@ -8,5 +9,5 @@ description=
 description=[url=https://discord.gg/SReMnbV4V7][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/PZmodCommBanner1.png[/img][/url]
 description=
 description=[h3]Copyright 2023 Chuckleberry Finn. This item is not authorized for posting on Steam, except under the Steam account named Chuckleberry Finn.[/h3]
-tags=Build 41;
-visibility=unlisted
+tags=Build 41;Misc;Realistic;Silly/Fun
+visibility=public
