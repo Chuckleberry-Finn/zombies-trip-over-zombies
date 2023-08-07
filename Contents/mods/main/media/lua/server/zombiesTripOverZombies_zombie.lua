@@ -25,6 +25,7 @@ function zombiesTripOverZombies.update(zombie)
 
     ---@type IsoGridSquare
     local square = zombie:getSquare()
+    if not square then return end
 
     local bodyHere = square:getDeadBody()
     if bodyHere then if util.isVeryClose(zombie,bodyHere) then zombiesTripOverZombies.trip(zombie) end end
