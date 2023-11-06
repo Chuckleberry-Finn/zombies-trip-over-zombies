@@ -1,7 +1,8 @@
 local util = {}
 
-function util.isVeryClose(objA,objB)
-    return (math.abs(objA:getX()-objB:getX())<=0.3 and math.abs(objA:getY()-objB:getY())<=0.3)
+function util.isVeryClose(objA,objB,dist)
+    dist = dist or 0.3
+    return (math.abs(objA:getX()-objB:getX())<=dist and math.abs(objA:getY()-objB:getY())<=dist)
 end
 
 ---@param character IsoGameCharacter|IsoMovingObject|IsoObject
