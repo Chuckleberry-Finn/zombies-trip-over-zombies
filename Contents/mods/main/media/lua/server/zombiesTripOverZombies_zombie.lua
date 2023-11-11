@@ -7,13 +7,17 @@ zombiesTripOverZombies.timeStamps = {}
 ---@param zombie IsoZombie|IsoGameCharacter|IsoMovingObject|IsoObject
 function zombiesTripOverZombies.trip(zombie)
 
-    local lastTripped = zombiesTripOverZombies.timeStamps[zombie]
-    if lastTripped and lastTripped > getTimestampMs() then return end
-    zombiesTripOverZombies.timeStamps[zombie] = getTimestampMs()+200
+    local chance = SandboxVars.ZombiesTripOverZombies.zombieTripChance
+
+    if chance < 100 then
+        local lastTripped = zombiesTripOverZombies.timeStamps[zombie]
+        if lastTripped and lastTripped > getTimestampMs() then return end
+        zombiesTripOverZombies.timeStamps[zombie] = getTimestampMs()+(220-chance)
+    end
 
     if zombie:getBumpedChr() or zombie:isOnFloor() or util.badStates[zombie:getCurrentState()] then return end
 
-    if (ZombRand(101) >= SandboxVars.ZombiesTripOverZombies.zombieTripChance) then return end
+    if (ZombRand(101) >= chance) then return end
 
     if zombie:getMoveSpeed() >= 0.06 then
         zombie:setBumpType("trippingFromSprint")
