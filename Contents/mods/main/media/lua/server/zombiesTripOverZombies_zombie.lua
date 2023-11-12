@@ -12,7 +12,7 @@ function zombiesTripOverZombies.trip(zombie)
     if chance < 100 then
         local lastTripped = zombiesTripOverZombies.timeStamps[zombie]
         if lastTripped and lastTripped > getTimestampMs() then return end
-        zombiesTripOverZombies.timeStamps[zombie] = getTimestampMs()+(220-chance)
+        zombiesTripOverZombies.timeStamps[zombie] = getTimestampMs()+500
     end
 
     if zombie:getBumpedChr() or zombie:isOnFloor() or util.badStates[zombie:getCurrentState()] then return end
@@ -26,6 +26,7 @@ function zombiesTripOverZombies.trip(zombie)
         zombie:knockDown(true)
     end
 end
+
 
 --for OnZombieUpdate event (zombie)
 ---@param zombie IsoZombie|IsoGameCharacter|IsoMovingObject|IsoObject
