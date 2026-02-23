@@ -19,17 +19,20 @@ function zombiesTripOverZombies.trip(zombie)
 
     if (ZombRand(101) >= chance) then return end
 
-    print("getMovementSpeed: "..zombie:getMovementSpeed())
-
     if zombie:getMovementSpeed() >= 0.06 then
         --zombie:setVariable("ClimbFenceOutcome", "fall")
-        --zombie:setVariable("FromBehind", true)
+        --zombie:setVariable("bumptype", "trippingFromSprint")
+        --zombie:setBumpFall(true)
+        --zombie:setBumpFallType("pushedBehind")
         --zombie:setBumpType("trippingFromSprint")
+        --zombie:setOnFloor(true)
+        --zombie:setHitReaction("")
+        zombie:setKnockedDown(true)
+        zombie:setFallOnFront(true)
     else
         if SandboxVars.ZombiesTripOverZombies.sprintersOnly == true then return end
-        --zombie:knockDown(false)
-        --zombie:setVariable("ClimbFenceOutcome", "fall")
-        --zombie:setVariable("FromBehind", true)
+        zombie:setKnockedDown(true)
+        zombie:setFallOnFront(true)
     end
 end
 
