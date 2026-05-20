@@ -4,7 +4,7 @@ local util = require("zombiesTripOverZombies_util")
 
 zombiesTripOverZombies.timeStamps = {}
 
----@param zombie IsoZombie|IsoGameCharacter|IsoMovingObject|IsoObject
+---@param zombie IsoZombie--|IsoGameCharacter|IsoMovingObject|IsoObject
 function zombiesTripOverZombies.trip(zombie)
 
     local chance = SandboxVars.ZombiesTripOverZombies.zombieTripChance
@@ -28,11 +28,14 @@ function zombiesTripOverZombies.trip(zombie)
         --zombie:setOnFloor(true)
         --zombie:setHitReaction("")
         zombie:setKnockedDown(true)
-        zombie:setFallOnFront(true)
+        zombie:setHitForce(0.5)
+        zombie:setHitFromBehind(true)
     else
         if SandboxVars.ZombiesTripOverZombies.sprintersOnly == true then return end
         zombie:setKnockedDown(true)
-        zombie:setFallOnFront(true)
+        zombie:setHitForce(0.5)
+        zombie:setHitFromBehind(true)
+
     end
 end
 
